@@ -1,0 +1,26 @@
+{
+  "name": "grateful",
+  "version": "1.0.0",
+  "description": "grateful",
+  "bin": "./index.js",
+  "preferGlobal": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davguij/grateful.git"
+  },
+  "keywords": [],
+  "author": "David Guijarro<guijarro.dav@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/davguij/grateful/issues"
+  },
+  "homepage": "https://github.com/davguij/grateful#readme",
+  "dependencies": {
+    "axios": "^0.17.1",
+    "chalk": "^2.3.0",
+    "github": "^12.1.0"
+  }
+}
