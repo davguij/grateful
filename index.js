@@ -3,9 +3,10 @@ const chalk = require('chalk');
 const axios = require('axios');
 const GitHubApi = require('github');
 const github = new GitHubApi({ Promise: Promise });
+const token = process.env.GITHUB_TOKEN;
 github.authenticate({
   type: 'token',
-  token: require('./grateful').TOKEN,
+  token,
 });
 const path = require('path');
 const pjson = path.join(process.cwd(), 'package.json');
