@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+const chalk = require('chalk');
 const axios = require('axios');
 const GitHubApi = require('github');
 const github = new GitHubApi({ Promise: Promise });
@@ -30,13 +31,19 @@ const spreadGratefulness = async () => {
           owner,
           repo,
         });
-        console.log(`${owner}/${repo} succesfully starred!`);
+        console.log(
+          `👍  ${chalk.green.bold(owner + '/' + repo)} ${chalk.green(
+            'succesfully starred!'
+          )}`
+        );
       } catch (err) {
-        console.error(`Error: ${owner}/${repo} could not be starred :(`);
+        console.error(
+          chalk.red('😕  ' + `Error: ${owner}/${repo} could not be starred :(`)
+        );
       }
     }
   } catch (err) {
-    console.error('Unknown error');
+    console.error('😕  ' + chalk.red.bold('Unknown error'));
   }
 };
 

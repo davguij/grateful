@@ -20,6 +20,7 @@
   "homepage": "https://github.com/davguij/grateful#readme",
   "dependencies": {
     "axios": "^0.17.1",
+    "chalk": "^2.3.0",
     "github": "^12.1.0"
   }
 }
